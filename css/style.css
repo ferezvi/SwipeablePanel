@@ -1,68 +1,63 @@
- 
-        body, html {
-        height: 100%;
+body, html {
+        height: 100% !important;
         margin: 0;
         overflow:hidden;
         font-weight: 100;
     }
+.hide_left{
 
-    
+    left: -20% !important;
+}
 
-    .hide_left{
+.hide_right{
+    right: -20% !important;
 
-        left: -20% !important;
-    }
+}
 
-    .hide_right{
-        right: -20% !important;
+.right-transition{
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  right 0.4s ease-in-out;
+    -o-transition:  right 0.4s ease-in-out;
+    transition:  right 0.4s ease-in-out;
+}
 
-    }
+    .left-transition{
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
 
-    .right-transition{
-        -webkit-transition:  right 0.4s ease-in-out;
-        -moz-transition:  right 0.4s ease-in-out;
-        -ms-transition:  right 0.4s ease-in-out;
-        -o-transition:  right 0.4s ease-in-out;
-        transition:  right 0.4s ease-in-out;
-    }
-
-        .left-transition{
-        -webkit-transition:  right 0.4s ease-in-out;
-        -moz-transition:  right 0.4s ease-in-out;
-        -ms-transition:  left 0.4s ease-in-out;
-        -o-transition:  left 0.4s ease-in-out;
-        transition:  left 0.4s ease-in-out;
-    }
-
-    .col2 {
-      position: absolute;
-      background-color: blue;
-      width: 60%;
-      height: 100%;
-      left: 20%;
-      text-align: center;
-     
-    }
+.col2 {
+  position: absolute;
+  background-color: blue;
+  width: 60%;
+  height: 100% !important;
+  left: 20%;
+  text-align: center;
+ 
+}
 
 
-    .right-panel {
-      position: absolute;
-      background: #00e676;
-      width: 40%;
-      height: 100%;
-      right: 0px;
-      text-align: left;
+.right-panel {
+  position: absolute;
+  background: #00e676;
+  width: 40%;
+  height: 100% !important;
+  right: 0px;
+  text-align: left;
 
-    }
+}
 
-    .left-panel {
+.left-panel {
 
-      position: absolute;
-      background-color: red;
-      width: 40%;    
-      height: 100%;
-      text-align: right;
-      left: 0px;
-    }
+  position: absolute;
+  background-color: red;
+  width: 40%;    
+  height: 100% !important;
+  left: 0px;
+  text-align: right;
+}
 
-  
