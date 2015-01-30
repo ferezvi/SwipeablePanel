@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Swipeable Panel</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  </head>
+  <body>
+
+    <div class="col2">Swipe to unhide panels <br> on desktop click and drag</div>
+    <div class="left-panel left-transition hide_left">Swipe me ---&#62;</div>
+    <div class="right-panel right-transition hide_right">&#60;---Swipe Me</div>
+
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $(function() {      
+          //Enable swiping on right panel
+          $(".right-panel").swipe({
+            swipeStatus:function(event, phase, direction, distance, duration, fingers){
+              if (phase=="move" && direction =="right") {
+                this.addClass("hide_right"); 
+                return false;
+              }
+              if (phase=="move" && direction =="left") {
+                this.removeClass("hide_right");
+                return false;
+              }
+            }
+          });
+          //Enable swiping on left panel
+          $(".left-panel").swipe({
+            swipeStatus:function(event, phase, direction, distance, duration, fingers){
+              if (phase=="move" && direction =="left") {
+                this.addClass("hide_left");
+                 return false;
+              }
+              if (phase=="move" && direction =="right") {
+               this.removeClass("hide_left");         
+               return false;
+              } 
+            }
+          });
+        });
+      });
+    </script>    
+  </body>
+</html>
