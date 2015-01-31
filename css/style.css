@@ -24,7 +24,7 @@ body, html {
   background: #00e676;
   width: 40%;
   height: 100%;
-  right: 0px;
+  right: -20% ;
   text-align: left;
 }
 .left-panel {
@@ -32,16 +32,16 @@ body, html {
   background-color: red;
   width: 40%;    
   height: 100%;
-  left: 0px;
+  left: -20%;
   text-align: right;
 }
 .hide_left{
 
-    left: -20% !important;
+    left: 0%;
 }
 
 .hide_right{
-    right: -20% !important;
+    right: 0%;
 
 }
 
