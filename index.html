@@ -19,36 +19,36 @@
     <script src="js/hammer.min.js"></script>
 
     <script type="text/javascript">
-      var panel_left = document.getElementById('left_panel');
-      var panel_right = document.getElementById('right_panel');
-      var central_panel = document.getElementById('central_panel');
-      // create a simple instance
-      // by default, it only adds horizontal recognizers
-      var mc = new Hammer(left_panel);
-      // listen to events...
-      mc.on("panleft panright", function(ev) {
-          central_panel.textContent = ev.type +" gesture detected.";
-          if(ev.type=="panright"){
-            left_panel.classList.add("hide_left");
-            return;
-          }
-          if(ev.type=="panleft"){
-            left_panel.classList.remove("hide_left");
-            return;
-          }
-      });
-      var mc1 = new Hammer(right_panel);
-      mc1.on("panleft panright", function(ev) {
-          central_panel.textContent = ev.type +" gesture detected.";
-          if(ev.type=="panright"){
-            right_panel.classList.remove("hide_right");
-            return;    
-          }
-          if(ev.type=="panleft"){  
-              right_panel.classList.add("hide_right");
-              return;  
-          }
-      });
+      // var panel_left = document.getElementById('left_panel');
+      // var panel_right = document.getElementById('right_panel');
+      // var central_panel = document.getElementById('central_panel');
+      // // create a simple instance
+      // // by default, it only adds horizontal recognizers
+      // var mc = new Hammer(left_panel);
+      // // listen to events...
+      // mc.on("panleft panright", function(ev) {
+      //     central_panel.textContent = ev.type +" gesture detected.";
+      //     if(ev.type=="panright"){
+      //       left_panel.classList.add("hide_left");
+      //       return;
+      //     }
+      //     if(ev.type=="panleft"){
+      //       left_panel.classList.remove("hide_left");
+      //       return;
+      //     }
+      // });
+      // var mc1 = new Hammer(right_panel);
+      // mc1.on("panleft panright", function(ev) {
+      //     central_panel.textContent = ev.type +" gesture detected.";
+      //     if(ev.type=="panright"){
+      //       right_panel.classList.remove("hide_right");
+      //       return;    
+      //     }
+      //     if(ev.type=="panleft"){  
+      //         right_panel.classList.add("hide_right");
+      //         return;  
+      //     }
+      // });
 
 
       // $(window).load(function(){
