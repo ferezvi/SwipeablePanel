@@ -1,9 +1,32 @@
 body, html {
-        height: 100% !important;
+        height: 100%;
         margin: 0;
         overflow:hidden;
-        font-weight: 100;
     }
+.central-panel {
+  position: absolute;
+  background-color: blue;
+  width: 60%;
+  height: 100%;
+  left: 20%;
+  text-align: center;
+}
+.right-panel {
+  position: absolute;
+  background: #00e676;
+  width: 40%;
+  height: 100%;
+  right: 0px;
+  text-align: left;
+}
+.left-panel {
+  position: absolute;
+  background-color: red;
+  width: 40%;    
+  height: 100%;
+  left: 0px;
+  text-align: right;
+}
 .hide_left{
 
     left: -20% !important;
@@ -14,50 +37,13 @@ body, html {
 
 }
 
-.right-transition{
-    -webkit-transition:  right 0.4s ease-in-out;
-    -moz-transition:  right 0.4s ease-in-out;
-    -ms-transition:  right 0.4s ease-in-out;
-    -o-transition:  right 0.4s ease-in-out;
-    transition:  right 0.4s ease-in-out;
-}
-
-    .left-transition{
-    -webkit-transition:  right 0.4s ease-in-out;
-    -moz-transition:  right 0.4s ease-in-out;
-    -ms-transition:  left 0.4s ease-in-out;
-    -o-transition:  left 0.4s ease-in-out;
-    transition:  left 0.4s ease-in-out;
-}
-
-.col2 {
-  position: absolute;
-  background-color: blue;
-  width: 60%;
-  height: 100% !important;
-  left: 20%;
-  text-align: center;
- 
+.transition{
+     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 
-.right-panel {
-  position: absolute;
-  background: #00e676;
-  width: 40%;
-  height: 100% !important;
-  right: 0px;
-  text-align: left;
-
-}
-
-.left-panel {
-
-  position: absolute;
-  background-color: red;
-  width: 40%;    
-  height: 100% !important;
-  left: 0px;
-  text-align: right;
-}
 
